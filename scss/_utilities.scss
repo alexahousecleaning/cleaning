@@ -1,0 +1,217 @@
+.shadow-1 {
+    -webkit-filter: drop-shadow( 3px 3px 2px rgba(0, 0, 0, .7));
+    filter: drop-shadow( 3px 3px 2px rgba(0, 0, 0, .7));
+    /* Similar syntax to box-shadow */
+}
+
+.box-white{
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 30px;
+}
+
+.nav-pill{
+    font-size: 16px;
+    font-weight: 600;
+    padding: 8px 8px;
+    text-decoration: none;
+    border-radius: 850px;
+    background-color: transparent ;
+    color: var(--color-menta500);
+
+
+    &:hover{
+        background-color: var(--color-menta50) ;
+        color: var(--color-menta700);
+        border: 1px solid var(--Primitives-Colours-Morado-100);
+        outline-width: 1px;
+        outline-offset: 0;
+        outline-color: rgba(204, 158, 237, 0.75);
+        outline-style: solid;
+        animation: animateOutline 4s ease infinite;
+    }
+    &:focus{
+        background-color: var(--color-menta50) ;
+        color: var(--color-menta700);
+    }
+    &:active{
+        background-color:transparent ;
+        color: var(--color-menta700);
+    }
+
+    // animation border
+
+    @keyframes animateOutline {
+        0% {
+          outline-width: 1px;
+          outline-offset: 0;
+          outline-color: rgba(0, 130, 206, 0);
+        }
+      
+        10% {
+          outline-color: var(--Primitives-Colours-Gris-200);
+        }
+      
+        /* The animation finishes at 50% */
+        50% {
+          outline-width: 5px;
+          outline-offset: 3px;
+          outline-color: rgba(0, 130, 206, 0);
+        }
+      
+        100% {
+          outline-width: 5px;
+          outline-offset: 3px;
+          outline-color: rgba(102, 102, 102, 0);
+        }
+      }
+
+}
+
+.btn{
+    font-size: 16px;
+    font-weight: 600;
+    padding: 12px 8px;
+    border-radius: 8px;
+
+    &-primary-solid{
+
+        background-color: var(--color-lavanda500) ;
+        border: 3px solid var(--color-lavanda500);
+        color: #fff;
+
+        &:hover{
+            background-color: var(--color-lavanda700) ;
+            border: 3px solid var(--color-lavanda300);
+            color: #fff;
+        }
+        &:focus{
+            background-color: var(--color-lavanda500)!important ;
+            border: 3px solid var(--color-menta400)!important;
+            color: #fff !important;
+        }
+        &:active{
+            background-color: var(--color-lavanda700)!important ;
+            border: 3px solid var(--color-lavanda700)!important;
+            color: #fff !important;
+        }
+    }
+
+    &-primary-outline{
+
+        background-color: transparent;
+        border: 3px solid var(--color-lavanda600);
+        color: var(--color-lavanda600);
+
+        &:hover{
+            background-color: var(--color-lavanda100) ;
+            border: 3px solid var(--color-lavanda500);
+            color: var(--color-lavanda600);
+        }
+        &:focus{
+            background-color: var(--color-menta50)!important ;
+            border: 3px solid var(--color-lavanda500)!important;
+            color: var(--color-lavanda600)!important;
+        }
+        &:active{
+            background-color: transparent!important ;
+            border: 3px solid var(--color-lavanda700)!important;
+            color: var(--color-lavanda700)!important;
+        }
+    }
+
+
+    &-secondary-solid{
+
+        background-color: var(--color-menta600) ;
+        border: 3px solid var(--color-menta600);
+        color: #fff;
+
+        &:hover{
+            background-color: var(--color-menta700) ;
+            border: 3px solid var(--color-menta300);
+            color: #fff;
+        }
+        &:focus{
+            background-color: var(--color-menta600)!important ;
+            border: 3px solid var(--color-menta300)!important;
+            color: #fff !important;
+        }
+        &:active{
+            background-color: var(--color-menta700)!important ;
+            border: 3px solid var(--color-menta700)!important;
+            color: #fff !important;
+        }
+    }
+
+    &-secondary-outline{
+
+        background-color: transparent;
+        border: 3px solid var(--color-menta600);
+        color: var(--color-lavanda600);
+
+        &:hover{
+            background-color: var(--color-menta500) ;
+            border: 3px solid var(--color-menta500);
+            color: var(--color-lavanda600);
+        }
+        &:focus{
+            background-color: var(--color-menta100)!important ;
+            border: 3px solid var(--color-menta500)!important;
+            color: var(--color-menta800)!important;
+        }
+        &:active{
+            background-color: transparent!important ;
+            border: 3px solid var(--color-menta800)!important;
+            color: var(--color-menta800)!important;
+        }
+    }
+
+    &-limon-solid{
+
+        background-color: var(--color-limon500) ;
+        border: 3px solid var(--color-limon500);
+        color: var(--color-lavanda800);
+        font-weight: bold;
+
+        &:hover{
+            background-color: var(--color-limon700) ;
+            border: 3px solid var(--color-limon300);
+            color: var(--color-lavanda700);
+        }
+        &:focus{
+            background-color: var(--color-limon600)!important ;
+            border: 3px solid var(--color-menta300)!important;
+            color: var(--color-lavanda700);
+        }
+        &:active{
+            background-color: var(--color-limon00)!important ;
+            border: 3px solid var(--color-limon700)!important;
+            color: var(--color-lavanda700);
+        }
+    }
+
+    &-limon-outline{
+
+        background-color: transparent;
+        border: 3px solid var(--color-menta600);
+        color: var(--color-lavanda600);
+
+        &:hover{
+            background-color: var(--color-menta500) ;
+            border: 3px solid var(--color-menta500);
+            color: var(--color-lavanda600);
+        }
+        &:focus{
+            background-color: var(--color-menta100)!important ;
+            border: 3px solid var(--color-menta500)!important;
+            color: var(--color-menta800)!important;
+        }
+        &:active{
+            background-color: transparent!important ;
+            border: 3px solid var(--color-menta800)!important;
+            color: var(--color-menta800)!important;
+        }
+    }
+
+}

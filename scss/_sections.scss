@@ -1,0 +1,277 @@
+
+
+body{
+   background-color: #C2ABD4;
+   color: var(--color-lavanda700);
+}
+
+.titulo-seccion{
+    text-align: center;
+    margin: 40px 0px;
+}
+
+section{
+    overflow: hidden;
+}
+
+// HEADER
+
+.header{
+    position: absolute;
+}
+
+.nav {
+    background-color: rgba(75, 47, 97, 0.9);
+    padding: 20px 40px;
+    width: 100%;
+    border-radius: 60px;
+    font-size: 18px;
+
+    .nav-link{
+        color: #fff;
+        text-align: center;
+        width: fit-content;
+
+    }
+}
+
+.navbar-toggler {
+    color: #fff;
+}
+
+
+
+
+
+// SECCION HERO
+.s-hero{
+    background: #774D98;
+    background: linear-gradient(344deg,rgba(119, 77, 152, 1) 0%, rgba(77, 50, 98, 1) 45%, rgba(40, 26, 51, 1) 100%);
+    padding-top: 120px;
+    height: 75vh;
+    overflow: hidden;
+
+    .hero-text{
+        font-size: 39px;
+        font-weight: 700 ;
+        line-height: 1;
+        // font-family: "Playfair", serif;
+
+    }
+    .image-logo{
+        width: 80%;
+    }
+
+    .texto-hero {
+        position: absolute;
+        top: 16vh;
+        width: 30vw;
+
+        .hero-quote-title{
+            font-size: 6vmin;
+            font-weight: 600;
+            font-family: "Work Sans", sans-serif;
+            font-style: normal;
+            line-height: 1;
+            color: #fff;
+
+        }
+
+        .hero-quote-subtitle{
+            font-size: 3vmin;
+            font-weight: 300;
+            font-family: "Merriweather Sans", sans-serif;
+            font-style: normal;
+            color: #fff;
+        }
+    }
+
+}
+
+// Clases para HERO  en dispositivos pequeños
+@media (max-width: 575.98px) { 
+
+    .s-hero{
+        height: 62vh!important;
+        overflow: hidden;
+    }
+
+    .texto-hero {
+        top: 18vh!important;
+        width: 90vw!important;
+        position: relative;
+    }
+
+    .hero-quote-title{
+        font-size: 7vmin!important;
+
+    }
+
+    .hero-quote-subtitle{
+        font-size: 5vmin!important;
+    }
+
+    .hero-image img{
+        position: relative;
+        top: 24vh;
+        
+    }
+
+}
+
+
+// PROMO BANNER
+
+.s-promo{
+    background-color: var(--color-limon600);
+    padding: 15px;
+
+}
+
+// ABOUT US
+
+.s-about{
+    background-color: var(--color-lavanda50);
+    padding: 100px 0px;
+
+    .about-image{
+        // background-color: var(--color-brisa100);
+        // width: 500px;
+
+       img {
+        border-radius: 10px;
+        
+       }
+        
+    }
+
+}
+
+// DIVIDER 1
+.divider1{
+    background-color: #ffff;
+}
+
+
+// SERVICES
+.s-services{
+    background-color: #fff;
+    padding: 100px 0px;
+
+    .service-card{
+
+        img{ 
+            width: 300px;
+            margin-bottom: 20px;
+        }
+
+        .text{
+            margin-left: 20px;
+        }
+
+
+
+    }
+
+}
+
+// Clases para SERVICES en dispositivos pequeños
+@media (max-width: 575.98px) { 
+
+    .s-services .service-card img {
+        width: 200px;
+    }
+
+    .s-services .service-card {
+        margin-bottom: 30px;
+    }
+
+}
+
+
+
+
+// DIVIDER 2
+.divider2{
+    background-color: var(--color-lavanda50);
+}
+
+// MAP
+.s-map{
+
+    background-color: var(--color-lavanda50);
+    padding: 100px 0px;
+    color: inherit;
+
+}
+
+// DIVIDER 3
+.divider3{
+    background-color: var(--color-limon50);
+}
+
+// CONTACT
+.s-contact{
+
+    background-color: var(--color-limon50);
+    padding: 100px 0px;
+    color: inherit;
+
+}
+
+// DIVIDER 4
+.divider4{
+    background-color: var(--color-menta50);
+}
+
+// TESTIMONIAL
+.s-testimonial{
+
+    background-color: var(--color-menta50);
+    padding: 100px 0px;
+   
+
+    .testimonial-card{
+        text-align: center;
+       
+
+        .box{
+            background-color: #fff;
+            border-radius: 20px;
+            padding: 20px;
+            box-shadow: 0 0.5rem 1rem rgba(40, 9, 49, 0.15);
+
+            img{
+                position: relative;
+                bottom: 40px;
+                width: 100px;
+                height: auto;
+                border: 2px solid var(--color-limon600);
+                
+            }
+
+        }
+
+    }
+
+}
+
+// DIVIDER 5
+.divider5{
+    background-color: var(--color-lavanda800);
+}
+
+// FOOTER
+
+.s-footer{
+
+    background-color: var(--color-lavanda800);
+    padding: 100px 0px;
+    color: #fff;
+
+    .border-bottom{
+        border-color: var(--color-lavanda500) !important;
+        
+    }
+
+}

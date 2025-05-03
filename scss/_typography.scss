@@ -1,0 +1,91 @@
+// @use '../custom' as *;
+
+
+.work-sans-font {
+    font-family: "Work Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+  }
+
+
+
+.merriweather-font{
+    font-family: "Merriweather Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+
+}
+
+.work-sans-font {
+    font-family: "Work Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+  }
+
+    
+
+.playfair-font {
+    font-family: "Playfair", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+}
+
+.t-h1{
+    font-size: 49px;
+    font-weight: 800 ;
+    line-height: 1;
+    font-family: "Playfair", serif;
+    font-style: italic;
+}
+
+.t-titulo{
+    font-size: 39px;
+    font-weight: 700 ;
+    font-family: "Playfair", serif;
+    font-style: normal;
+    line-height: 1;
+
+}
+
+.t-subtitulo{
+    font-size: 26px;
+    font-weight: 300 ;
+    font-family: "Work Sans", sans-serif;
+    font-style: normal;
+    line-height: 1.4;
+}
+
+.t-body{
+    font-size: 16px;
+    font-family: "Merriweather Sans", sans-serif;
+    font-style: normal;
+
+    &-light{font-weight: 300;}
+    &-regular{font-weight: 500;}
+    &-bold{font-weight: 800;}
+}
+
+.t-body-lg{
+    font-size: 20px;
+    font-family: "Merriweather Sans", sans-serif;
+    font-style: normal;
+
+    &-light{font-weight: 300;}
+    &-regular{font-weight: 500;}
+    &-bold{font-weight: 800;}
+}
+
+
+.t-white{ color: #fff;}
+.t-limon{ color: var(--color-limon500);}
+.t-lavanda{ color: var(--color-lavanda500);}
+.t-brisa{ color: var(--color-brisa500);}
+.t-gray{ color: var(--color-gray500);}
+
+.h1{font-size: 49px;}
+.h2{font-size: 39px ;}
+.h3{font-size: 31px ;}
+.h4{font-size: 25px ;}

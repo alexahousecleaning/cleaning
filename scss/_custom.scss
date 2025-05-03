@@ -1,0 +1,17 @@
+@use 'primitives' as *;
+
+// SOBRE ESCRIBE BOOTSTRAP
+$primary :  rgb(252, 239, 56) ; 
+$secondary: rgb(124, 58, 197);
+$success:   rgb(137, 193, 62);
+$info:      rgb(46, 203, 214);
+$warning:   rgb(255, 129, 26);
+
+
+// IMPORT BOOTSTRAP 5
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+
+
+// ---- SEMANTIC COLORS ------
+
+// PILLS AND BADGES
