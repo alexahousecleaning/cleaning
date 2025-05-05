@@ -7,6 +7,16 @@
   animation-range: entry 20% cover 50%;
 }
 
+@keyframes show {
+  from {
+    opacity: 0;
+    scale: 25%;
+  }
+  to {
+    opacity: 1;
+    scale: 100%;
+  }
+}
 /* Collection name: Primitives */
 /* Mode: Mode 1 */
 :root {
