@@ -10,47 +10,36 @@
     <link rel="stylesheet" href="./assets/css/fontawesome.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet"/>
+
 </head>
 <body>
 
-    <div class="sticky-lg-top  ">
-        <div class="container-fluid position-absolute mt-2">
-            <!-- HEADER -->
-            <div class="wrapper-nav container col-md-9 col-12 ">
-                <nav class="nav navbar navbar-expand-lg ">
-                    <div class="container-fluid">
-                      <a class="navbar-brand logo d-flex align-items-center" href="#">
-                        <img style="height: 40px; margin-right: 10px;" src="./assets/images/logo-small-circle.png" alt="">
-                        <span class="t-white"><strong>Alexa House Cleaning</strong></span>
-                      </a>
-                      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                      </button>
-                      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                        <div class="navbar-nav">
-                             <!-- navpills -->
-                            <div class="navegacion">
-                                <a href="#s-about" class=" nav-link nav-pill ms-2 active">About</a>
-                                <a href="#s-services" class="nav-link nav-pill ms-2">Services</a>
-                                <a href="#s-contact" class="nav-link nav-pill ms-2 disabled">Contact</a>
-                            </div>
-                          <!-- <a class="nav-link active" aria-current="page" href="#">Home</a>
-                          <a class="nav-link" href="#">Features</a>
-                          <a class="nav-link" href="#">Pricing</a>
-                          <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a> -->
-                        </div>
-                        <!-- social -->
-                        <div class="social">
-                            <span class="t-white me-4"><strong>(206)737-6307</strong></span>
-                            <a href="https://www.facebook.com/profile.php?viewas=100000686899395&id=61575671619679" class="t-white me-4"><i class="fa-brands fa-square-facebook"></i></a>
-                            <a href="https://www.instagram.com/alexahouse_cleaning/" class="t-white me-4"><i class="fa-brands fa-square-instagram"></i></a>
-                        </div>
-                      </div>
-                    </div>
-                </nav>
+    <div class="sticky-lg-top container-fluid position-absolute mt-2  ">
+        <!-- Menu mobile -->
 
-            </div>
+        <div class="wrapper container col-md-9 col-12">
+            <!-- NAV -->
+            <nav class=" nav navbar navbar-expand-lg w-100">
+                <div class="container-fluid">
+                    <div class="d-flex  justify-content-center justify-content-md-between flex-md-row w-100">
+                        <a class="navbar-brand d-none d-sm-block d-md-block" ><img style="height: 40px; margin-right: 10px;" src="./assets/images/logo-small-circle.png" alt="Logo"></a>
+                        <div class="d-flex justify-content-center w-100 ">
+                            <div class="p-2"><a href="#s-about" class=" nav-link nav-pill ms-2">About</a></div>
+                            <div class="p-2"><a href="#s-services" class="nav-link nav-pill ms-2">Services</a></div>
+                            <div class="p-2"><a href="#s-contact" class="nav-link nav-pill ms-2">Contact</a></div>
+                        </div>
+                        
+                        <div class="social d-none d-sm-flex d-md-flex justify-content-center ">
+                            
+                            <a href="https://www.facebook.com/profile.php?viewas=100000686899395&id=61575671619679" class="t-white me-4"><i class="fa-brands fa-facebook fa-xl"></i></a>
+                            <a href="https://www.instagram.com/alexahouse_cleaning/" class="t-white me-4"><i class="fa-brands fa-instagram fa-xl"></i></a>
+                        </div>
+                    </div>
+                </div> 
+            </nav>
         </div>
 
     </div>
@@ -60,7 +49,7 @@
         <div class="container">
             <!-- HERO CONTENT -->
             <div class="container">
-                <div class="wrapper-banner container col-md-8 col-12">
+                <div class="wrapper-banner container col-md-8 col-12 animate__animated animate__pulse">
                  <div class=" d-none content d-flex   flex-column flex-lg-row align-items-center ">
                     <div class=" col-12 col-md-6 hero-text t-white">
                         <p class="h1 ">Let’s make your home sparkle</p> <br>
@@ -100,7 +89,7 @@
     <section id="s-about" class="s-about">
         <div class="container">
             <div class="d-flex justify-content-around d-flex   flex-column flex-lg-row">
-                <div class="about-content col-md-5 col-12 p-4-lg p-4">
+                <div class="about-content col-md-5 col-12 p-4-lg p-4 animate__animated animate__bounceInLeft">
                     <p class="t-h1 mb-4">About Us</p>
                     <span class="t-titulo ">🧽 Alexa House Cleaning</span> <br>
                     <span class="t-subtitulo">Your Trusted Cleaning Partner in Lynnwood, WA</span> <br>
@@ -110,7 +99,7 @@
                     <div class="btn btn-primary-solid">Contact Us</div>
                 </div>
 
-                <div class="about-image col-md-6 col-12 justify-content-center p-4">
+                <div class="about-image col-md-6 col-12 justify-content-center p-4 animate__animated animate__bounceInRight">
                     <img class="shadow"  src="./assets/images/about-image.jpg" alt="">
                 </div>
 
@@ -208,10 +197,10 @@
         <!-- mapa -->
         <div class="container">
             <div class="d-flex flex-wrap  justify-content-around">
-                <div class="justify-content-center col-md-6">
+                <div class="justify-content-center col-md-6 animate__animated animate__bounceInLeft">
                     <iframe  class="p-4" style="width:100%" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d21419.24361917874!2d-122.2377472!3d47.8511104!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sus!4v1745728475918!5m2!1ses-419!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
-                <div class="about-content col-md-6 p-4">
+                <div class="about-content col-md-6 p-4 animate__animated animate__bounceInRight">
                     <span class="t-subtitulo">Lynnwood, WA, and surrounding areas</span> <br>
                     <p class="t-body mt-4">At Alexa House Cleaning, we proudly serve Lynnwood, WA, and surrounding areas, including Edmonds, Everett, Bothell, Mountlake Terrace, and more. Our team is committed to delivering top-quality cleaning services wherever you are. </p>
                     <ul>
@@ -296,7 +285,7 @@
         <!-- titulo seccion -->
         <div class="container col-lg-7 col-12">
             <div class="titulo-seccion">
-                <p class="t-h1 mb-4">Testimonials</p>
+                <p class="t-h1 mb-4 my-animate">Testimonials</p>
                 <!-- <span class="t-titulo ">📍 Bringing Sparkling Clean Homes Across Snohomish County</span> <br> -->
                 <!-- <span class="t-subtitulo">Experience the Difference of a Truly Clean Space.</span> <br> -->
                 <!-- <p class="t-subtitulo">We offer a full range of professional cleaning services designed to fit your lifestyle and business needs. -->
@@ -305,35 +294,43 @@
         </div>
         
 
-        <div class="container d-flex flex-column flex-md-row justify-content-evenly gx-5">
-            <div class="testimonial-card p-4 ">
+        <div class="container d-flex flex-column flex-md-row justify-content-evenly gx-5 ">
+            <div class="testimonial-card p-4  flex-fill">
                 <div class="box">
-                    <img class="rounded mx-auto d-block shadow" src="./assets/images/testimonial1.jpg" alt="">
+                    <!-- <img class="rounded mx-auto d-block shadow" src="./assets/images/testimonial1.jpg" alt=""> -->
+                    <div class="img mx-auto d-block shadow"><i class="fa-solid fa-user fa-2xl"></i></div>
+                    <p class="t-body-lg">Dave R.</p>
+                    <p class="t-body">Kenmore, WA</p>
+                    <p class="t-body">I've had many months of quality service. Would recommend.</p>
+                </div>
+            </div>
+            <div class="testimonial-card p-4  flex-fill">
+                <div class="box">
+                    <div class="img mx-auto d-block shadow"><i class="fa-solid fa-user fa-2xl"></i></div>
+                    <p class="t-body-lg">Claudia F.</p>
+                    <p class="t-body">Mountlake Terrace, WA</p>
+                    <p class="t-body">Fantastic asset to our household. Punctual, professional, pleasant, effective.
+
+                    </p>
+                </div>
+            </div>
+            <div class="testimonial-card p-4  flex-fill">
+                <div class="box">
+                    <div class="img mx-auto d-block shadow"><i class="fa-solid fa-user fa-2xl"></i></div>
+                    <p class="t-body-lg"> Patricia D.</p>
+                    <p class="t-body"> Bothell, WA</p>
+                    <p class="t-body">They did a thorough job of cleaning my house. They were friendly.
+
+                    </p>
+                </div>
+            </div>
+            <!-- <div class="testimonial-card p-4  flex-fill">
+                <div class="box">
+                    <div class="img mx-auto d-block shadow"><i class="fa-solid fa-user fa-2xl"></i></div>
                     <p class="t-body-lg">[Name person]</p>
                     <p class="t-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam placeat dolores provident.</p>
                 </div>
-            </div>
-            <div class="testimonial-card p-4 ">
-                <div class="box">
-                    <img class="rounded mx-auto d-block shadow" src="./assets/images/testimonial2.jpg" alt="">
-                    <p class="t-body-lg">[Name person]</p>
-                    <p class="t-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam placeat dolores provident.</p>
-                </div>
-            </div>
-            <div class="testimonial-card p-4 ">
-                <div class="box">
-                    <img class="rounded mx-auto d-block shadow" src="./assets/images/testimonial3.jpg" alt="">
-                    <p class="t-body-lg">[Name person]</p>
-                    <p class="t-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam placeat dolores provident.</p>
-                </div>
-            </div>
-            <div class="testimonial-card p-4 ">
-                <div class="box">
-                    <img class="rounded mx-auto d-block shadow" src="./assets/images/testimonial4.jpg" alt="">
-                    <p class="t-body-lg">[Name person]</p>
-                    <p class="t-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam placeat dolores provident.</p>
-                </div>
-            </div>
+            </div> -->
         </div>
 
     </section>

@@ -1,4 +1,12 @@
 @charset "UTF-8";
+.my-animate {
+  view-timeline-name: --high;
+  view-timeline-axis: block;
+  animation-timeline: --high;
+  animation-name: show;
+  animation-range: entry 20% cover 50%;
+}
+
 /* Collection name: Primitives */
 /* Mode: Mode 1 */
 :root {
@@ -11934,17 +11942,39 @@ section {
   width: 100%;
   border-radius: 60px;
   font-size: 18px;
+  margin-top: 10px;
 }
 .nav .nav-link {
   color: #fff;
   text-align: center;
   width: fit-content;
 }
+.nav .social {
+  padding: 16px 8px;
+}
 
 .navbar-toggler {
   color: #fff;
 }
 
+@media (max-width: 575.98px) {
+  .nav {
+    background-color: rgb(75, 47, 97);
+    padding: 10px 20px;
+    width: 100%;
+    border-radius: 60px;
+    font-size: 18px;
+    z-index: 1;
+  }
+  .nav .nav-link {
+    color: #fff;
+    text-align: center;
+    width: auto !important;
+  }
+  .nav .social {
+    padding: 16px 8px;
+  }
+}
 .s-hero {
   background: #774D98;
   background: linear-gradient(344deg, rgb(119, 77, 152) 0%, rgb(77, 50, 98) 45%, rgb(40, 26, 51) 100%);
@@ -12075,13 +12105,27 @@ section {
   border-radius: 20px;
   padding: 20px;
   box-shadow: 0 0.5rem 1rem rgba(40, 9, 49, 0.15);
+  min-height: 340px;
+  max-height: 340px;
 }
-.s-testimonial .testimonial-card .box img {
+.s-testimonial .testimonial-card .box img, .s-testimonial .testimonial-card .box .img {
   position: relative;
   bottom: 40px;
   width: 100px;
-  height: auto;
+  height: 100px;
+  background: var(--color-limon50);
   border: 2px solid var(--color-limon600);
+  border-radius: 900px;
+  padding: 30px;
+}
+.s-testimonial .testimonial-card .box img i, .s-testimonial .testimonial-card .box .img i {
+  font-size: 40px;
+}
+.s-testimonial .testimonial-card .box .icon-container {
+  background-color: var(--color-lavanda500);
+  color: #fff;
+  border-radius: 60px;
+  padding: 30;
 }
 
 .divider5 {

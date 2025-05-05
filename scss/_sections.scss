@@ -26,11 +26,17 @@ section{
     width: 100%;
     border-radius: 60px;
     font-size: 18px;
+    margin-top: 10px;
 
     .nav-link{
         color: #fff;
         text-align: center;
         width: fit-content;
+
+    }
+
+    .social{
+        padding: 16px 8px;
 
     }
 }
@@ -39,6 +45,30 @@ section{
     color: #fff;
 }
 
+// Clases para NAV  en dispositivos pequeños
+@media (max-width: 575.98px) { 
+
+    .nav {
+        background-color: rgba(75, 47, 97);
+        padding: 10px 20px;
+        width: 100%;
+        border-radius: 60px;
+        font-size: 18px;
+        z-index: 1;
+    
+        .nav-link{
+            color: #fff;
+            text-align: center;
+            width: auto!important;
+    
+        }
+    
+        .social{
+            padding: 16px 8px;
+    
+        }
+    }
+}
 
 
 
@@ -229,10 +259,13 @@ section{
 
     background-color: var(--color-menta50);
     padding: 100px 0px;
+
+    
    
 
     .testimonial-card{
         text-align: center;
+    
        
 
         .box{
@@ -240,14 +273,31 @@ section{
             border-radius: 20px;
             padding: 20px;
             box-shadow: 0 0.5rem 1rem rgba(40, 9, 49, 0.15);
+            min-height: 340px;
+            max-height: 340px;
 
-            img{
+            img, .img{
                 position: relative;
                 bottom: 40px;
                 width: 100px;
-                height: auto;
+                height: 100px;
+                background: var(--color-limon50);
                 border: 2px solid var(--color-limon600);
+                border-radius: 900px;
+                padding :30px;
+
+                i{
+                    font-size: 40px;
+                }
                 
+            }
+
+            .icon-container{
+                background-color: var(--color-lavanda500);
+                color: #fff;
+                border-radius: 60px;
+                padding: 30;
+        
             }
 
         }
