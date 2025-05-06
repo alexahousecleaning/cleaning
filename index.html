@@ -258,51 +258,47 @@
                             <button type="submit" class="btn btn-lg btn-primary">Submit</button>
                         </form> -->
 
-                        <!-- <form action="sendmail.php" method="POST" target="_blank">
-                            <div>
-                              <label for="name">Name:</label>
-                              <input type="text" name="name" id="name" required>
+                        
+
+                        <form id="contactForm" class="needs-validation" action="https://api.web3forms.com/submit" method="POST" novalidate>
+
+                            <!-- Replace with your Access Key -->
+                            <input type="hidden" name="access_key" value="1dc40c1a-6dfd-4c8b-abc0-931a53d8fb4a">
+
+                            <!-- Name -->
+
+                            <div class="mb-3">
+                                <label for="name" class="form-label">Name</label>
+                                <input type="text" class="form-control" id="name" name="name" placeholder="Your Name" required>
+                                <div class="invalid-feedback">Please enter your name.</div>
                             </div>
-                          
-                            <div>
-                              <label for="email">Email:</label>
-                              <input type="email" name="email" id="email" required>
-                            </div>
-                          
-                            <div>
-                              <label for="phone">Phone:</label>
-                              <input type="tel" name="phone" id="phone" required>
-                            </div>
-                          
-                            <div>
-                              <label for="message">Message:</label>
-                              <textarea name="message" id="message" rows="4" required></textarea>
-                            </div>
-                            <button type="submit" class="btn btn-lg btn-primary">Submit</button>
-                          
-                          </form> -->
-                          
 
 
-                        <form id="contact-form">
-                            <input type="text" name="name" placeholder="Name" required>
-                            <input type="email" name="email" placeholder="Email" required>
-                            <input type="tel" name="phone" placeholder="Phone" required>
-                            <textarea name="message" placeholder="Message" required></textarea>
-                            <button type="submit">Send</button>
+                            <!-- Email Address -->
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Email Address</label>
+                                <input type="email" class="form-control" id="email" name="email" placeholder="example@example.com" required>
+                                <div class="invalid-feedback">Please enter a valid email address.</div>
+                            </div>
+                        
+                            <!-- Phone -->
+                            <div class="mb-3">
+                                <label for="phone" class="form-label">Phone</label>
+                                <input type="phone" class="form-control" id="phone" name="phone" placeholder="123-456-7890" required>
+                                <div class="invalid-feedback">Please enter your phone number.</div>
+                            </div>
+
+                            <!-- Message -->
+                            <div class="mb-3">
+                                <label for="message" class="form-label">Message</label>
+                                <textarea class="form-control" id="message" name="message" rows="4" placeholder="Your Message" required></textarea>
+                                <div class="invalid-feedback">Please enter a message.</div>
+                            </div>
+                                                    
+                            <button type="submit"  class="col-12 btn btn-secondary ">Submit</button>
                         </form>
 
-                        <!-- Mensaje de éxito oculto -->
-
-                        <div id="thank-you-message" style="display:none;">
-                            <h2>Thank you for contacting us!</h2>
-                        </div>
-                        <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
-                        <script>
-                        (function() {
-                            emailjs.init("7uef2YIjWMiWYG8Pj"); // Reemplaza con tu User ID
-                        })();
-                        </script>
+                    
                           
                         
 
@@ -430,19 +426,7 @@
     <!--//////////////////// SCRIPTS  ///////////////////// -->
 
     <!-- ENVIO DE CORREO -->
-    <script>
-        document.getElementById("contact-form").addEventListener("submit", function(e) {
-          e.preventDefault();
-        
-          emailjs.sendForm('7uef2YIjWMiWYG8Pj', 'template_e702nuw', this)
-            .then(function(response) {
-               document.getElementById("contact-form").style.display = "none";
-               document.getElementById("thank-you-message").style.display = "block";
-            }, function(error) {
-               alert("Oops! Something went wrong.\n" + error.text);
-            });
-        });
-    </script>
+   
 
 
     <!-- Bootstrap JS and dependencies -->
