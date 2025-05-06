@@ -79,29 +79,45 @@
     
     <!-- HERO -->
     <section id="" class="s-hero">
-        <div class="container">
+        <div class="container-fluid">
             <!-- HERO CONTENT -->
-            <div class="container">
-                <div class="wrapper-banner container col-md-8 col-12 ">
-                 <div class=" d-none content d-flex   flex-column flex-lg-row align-items-center ">
-                    <div class=" col-12 col-md-6 hero-text t-white">
-                        <p class="h1 ">Let’s make your home sparkle</p> <br>
-                        <div class="btn btn-limon-solid me-2">Get a FREE Cuote</div>
-                    </div>
-                    <div class="col-12 col-md-6 image-logo d-flex justify-content-around">
-                        <img src="./assets/images/woman.png" alt="">
+            <div class="container-fluid">
+                <div class="wrapper-banner container-fluid   ">
+                    <!-- Carrusel -->
+                    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+                        <div class="carousel-indicators">
+                          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        </div>
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <div class="hero-image d-flex flex-column">
+                                <img src="./assets/images/hero1.png" class="d-block w-100" alt="...">
+                            </div>
+                          </div>
+                          <div class="carousel-item">
+                            <div class="hero-image d-flex flex-column">
+                                <img src="./assets/images/hero2.png" class="d-block w-100" alt="...">
+                            </div>
+                            
+                          </div>
+                          <div class="carousel-item">
+                            <div class="hero-image d-flex flex-column">
+                                <img src="./assets/images/hero3.png" class="d-block w-100" alt="...">
+                            </div>
+                          </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
                     </div>
 
-                 </div>
-
-                 <div class="hero-image d-flex flex-column">
-                    <img class=""  src="./assets/images/hero1.png" alt="">
-                    <div class="texto-hero ">
-                        <span class="hero-quote-title">Sparkling Spaces, <span>Exceptional</span> Service.</span>
-                        <p class="hero-quote-subtitle">From deep cleans to everyday shine — we’re your trusted cleaning experts.</p>
-                        <div class="btn btn-limon-solid me-2">Get a FREE Quote</div>
-                    </div>
-                 </div>
 
                 </div>
 
