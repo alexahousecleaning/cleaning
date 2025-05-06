@@ -238,7 +238,7 @@
                 <div class="col-lg-6 col-12 p-4">
                     <div class="box-white My-Form shadow">
 
-                        <form id="contactForm" method="POST" action="sendmail.php">
+                        <!-- <form id="contactForm" method="POST" action="sendmail.php">
                             <div class="mb-3">
                               <label for="InputName" class="form-label">Name</label>
                               <input type="text" name="Name" class="form-control" id="InputName" required>
@@ -256,7 +256,31 @@
                               <textarea class="form-control" name="Message" id="InputMsg" rows="3" required></textarea>
                             </div>
                             <button type="submit" class="btn btn-lg btn-primary">Submit</button>
-                        </form>
+                        </form> -->
+
+                        <form action="sendmail.php" method="POST" target="_blank">
+                            <div>
+                              <label for="name">Name:</label>
+                              <input type="text" name="name" id="name" required>
+                            </div>
+                          
+                            <div>
+                              <label for="email">Email:</label>
+                              <input type="email" name="email" id="email" required>
+                            </div>
+                          
+                            <div>
+                              <label for="phone">Phone:</label>
+                              <input type="tel" name="phone" id="phone" required>
+                            </div>
+                          
+                            <div>
+                              <label for="message">Message:</label>
+                              <textarea name="message" id="message" rows="4" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-lg btn-primary">Submit</button>
+                          
+                          </form>
                           
                         <!-- Mensaje de éxito oculto -->
                         <div id="thankYouMessage" style="display:none; opacity:0; transition:opacity 0.8s ease; margin-top:20px;">
