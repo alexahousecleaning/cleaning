@@ -258,7 +258,7 @@
                             <button type="submit" class="btn btn-lg btn-primary">Submit</button>
                         </form> -->
 
-                        <form action="sendmail.php" method="POST" target="_blank">
+                        <!-- <form action="sendmail.php" method="POST" target="_blank">
                             <div>
                               <label for="name">Name:</label>
                               <input type="text" name="name" id="name" required>
@@ -280,12 +280,31 @@
                             </div>
                             <button type="submit" class="btn btn-lg btn-primary">Submit</button>
                           
-                          </form>
+                          </form> -->
                           
+
+
+                        <form id="contact-form">
+                            <input type="text" name="name" placeholder="Name" required>
+                            <input type="email" name="email" placeholder="Email" required>
+                            <input type="tel" name="phone" placeholder="Phone" required>
+                            <textarea name="message" placeholder="Message" required></textarea>
+                            <button type="submit">Send</button>
+                        </form>
+
                         <!-- Mensaje de éxito oculto -->
-                        <div id="thankYouMessage" style="display:none; opacity:0; transition:opacity 0.8s ease; margin-top:20px;">
-                            <h3>Thank you! Your message has been sent successfully.</h3>
+
+                        <div id="thank-you-message" style="display:none;">
+                            <h2>Thank you for contacting us!</h2>
                         </div>
+                        <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+                        <script>
+                        (function() {
+                            emailjs.init("7uef2YIjWMiWYG8Pj"); // Reemplaza con tu User ID
+                        })();
+                        </script>
+                          
+                        
 
                     </div>
                 </div>
@@ -412,36 +431,20 @@
 
     <!-- ENVIO DE CORREO -->
     <script>
-        document.getElementById('contactForm').addEventListener('submit', function(event) {
-          event.preventDefault(); // Previene el envío normal
+        document.getElementById("contact-form").addEventListener("submit", function(e) {
+          e.preventDefault();
         
-          let formData = new FormData(this);
-        
-          fetch('sendmail.php', {
-            method: 'POST',
-            body: formData
-          })
-          .then(response => response.text())
-          .then(result => {
-            if (result.trim() === "success") {
-              document.getElementById('contactForm').reset(); // Limpiar el formulario
-              document.getElementById('contactForm').style.display = 'none'; // Esconder formulario
-        
-              const thankYouDiv = document.getElementById('thankYouMessage');
-              thankYouDiv.style.display = 'block';
-              setTimeout(() => {
-                thankYouDiv.style.opacity = '1';
-              }, 50);
-            } else {
-              alert('Oops! Something went wrong. Please try again.');
-            }
-          })
-          .catch(error => {
-            console.error('Error:', error);
-            alert('There was a problem with the server.');
-          });
+          emailjs.sendForm('7uef2YIjWMiWYG8Pj', 'template_e702nuw', this)
+            .then(function(response) {
+               document.getElementById("contact-form").style.display = "none";
+               document.getElementById("thank-you-message").style.display = "block";
+            }, function(error) {
+               alert("Oops! Something went wrong.\n" + error.text);
+            });
         });
     </script>
+    
+
         
         
 
