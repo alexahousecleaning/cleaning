@@ -130,8 +130,12 @@ section{
 @media (max-width: 575.98px) { 
 
     .s-hero{
-        height: 62vh!important;
+        height: 66vh!important;
         overflow: hidden;
+    }
+    .carousel-inner{
+        height: 60vh!important;
+
     }
 
     .texto-hero {
@@ -151,7 +155,7 @@ section{
 
     .hero-image img{
         position: relative;
-        top: 24vh;
+        // top: 24vh;
         
     }
 
