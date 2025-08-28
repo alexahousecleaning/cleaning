@@ -1,0 +1,26 @@
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://www.alexahousecleaning.com/sitemap.xml
+
+# Crawl-delay for respectful crawling
+Crawl-delay: 1
+
+# Allow all image files
+Allow: /assets/images/
+
+# Allow CSS and JS files
+Allow: /assets/css/
+Allow: /assets/js/
+
+# Block any potential admin or private directories
+Disallow: /admin/
+Disallow: /private/
+Disallow: /.git/
+Disallow: /node_modules/
+
+# Block any temporary or backup files
+Disallow: *.tmp
+Disallow: *.bak
+Disallow: *~

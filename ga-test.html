@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Analytics Test Page</title>
+</head>
+<body>
+    <h1>Google Analytics Test Page</h1>
+    <p>This page is for testing Google Analytics tracking.</p>
+    
+    <button id="testButton">Test Event Tracking</button>
+    
+    <script>
+        // Test Google Analytics tracking
+        document.getElementById('testButton').addEventListener('click', function() {
+            if (typeof gtag === 'function') {
+                gtag('event', 'test_click', {
+                    'event_category': 'Testing',
+                    'event_label': 'Test Button Click',
+                    'value': 1
+                });
+                console.log('GA test event sent');
+                alert('Google Analytics test event sent successfully!');
+            } else {
+                console.log('Google Analytics not available');
+                alert('Google Analytics not available on this page');
+            }
+        });
+    </script>
+</body>
+</html>
